@@ -1,0 +1,67 @@
+2020-02-21 10:51:59.978226+0800 coalAPP2[13449:4278402] <Weex>[info]MADEngine.m:101, WeexSDK Version: 0.24.0
+2020-02-21 10:51:59.998797+0800 coalAPP2[13449:4278402] <Weex>[info]MADEngine.m:636, MADCoreVersion : 929
+2020-02-21 10:52:00.001503+0800 coalAPP2[13449:4278545] <Weex>[info]WXBridgeContext.m:1251, jsLog: Start JS Framework 0.29.7, Build at 2019-06-10 17:34. (Vue: 2.5.16-weex.5, Rax: 0.4.20) Start JS Framework 0.29.7, Build at 2019-06-10 17:34. (Vue: 2.5.16-weex.5, Rax: 0.4.20)
+SW Trace: 2020/02/21 02:52:00 device_darwin.go:14: DeviceInfo: osType = iOS
+2020-02-21 10:52:00.021127+0800 coalAPP2[13449:4278544] <Weex>[info]WXBridgeContext.m:1251, jsLog: Start JS Framework 0.29.7, Build at 2019-06-10 17:34. (Vue: 2.5.16-weex.5, Rax: 0.4.20) Start JS Framework 0.29.7, Build at 2019-06-10 17:34. (Vue: 2.5.16-weex.5, Rax: 0.4.20)
+2020-02-21 10:52:00.102089+0800 coalAPP2[13449:4278402] <Weex>[info]MADEngine.m:592, networkState : MADNetworkAccessible (not correct sometimes)
+SW Trace: 2020/02/21 02:52:00 proxy.go:172: Starting transactional proxy at 127.0.0.1:19484
+SW Trace: 2020/02/21 02:52:00 central.go:88: Using central file in cache directory.
+SW Trace: 2020/02/21 02:52:00 central.go:445: Found repo main, URL: http://v291440d83.qicp.vip/publish/csii/newdemo1/newdemo1-default/main/repo.dat
+SW Error: 2020/02/21 02:52:00 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:00 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:00 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:00 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:00 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:00 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:00 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:00 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:01 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:01 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:01 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:01 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:01 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:01 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:01 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:01 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:01 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:01 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:01 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:01 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:02 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:02 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:02 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:02 repo.go:270: No repo file found for main.
+SW Trace: 2020/02/21 02:52:02 utils.go:274: REPO VERIFY: No digital signature. Skipped.
+SW Log: 2020/02/21 02:52:02 Starting Service Worker...
+SW Log: 2020/02/21 02:52:02 Build 367
+SW Log: 2020/02/21 02:52:02 Licensed to MADP(纯净版)(GREEN)
+2020-02-21 10:52:02.692901+0800 coalAPP2[13449:4278524] <Weex>[info]MADEngine.m:404, app_name:科蓝移动金融
+2020-02-21 10:52:02.693783+0800 coalAPP2[13449:4278524] <Weex>[info]MADEngine.m:406, app_info:{"app_id":"newdemo1","app_secretkey":"a02414b1f2b7c4fc","behavior_url":"","client_id":"csii"}
+SW Trace: 2020/02/21 02:52:02 proxy.go:220: Starting resource proxy at 127.0.0.1:44964 for target http://v291440d83.qicp.vip/publish/csii/newdemo1/newdemo1-default/main/repo.dat
+SW Trace: 2020/02/21 02:52:02 central.go:270: PREFETCH: Prefetching central...
+SW Trace: 2020/02/21 02:52:02 central.go:279: Using http://v291440d83.qicp.vip/publish/csii/newdemo1/newdemo1-default/central.dat
+2020-02-21 10:52:02.695260+0800 coalAPP2[13449:4278524] <Weex>[info]MADEngine.m:427, EVENT: Command: FatalError, Module: FatalError ,  Name: 无法连接到main仓库服务器，请检查网络后重试 , Path:
+SW Trace: 2020/02/21 02:52:02 gray.go:51: Found gray url from registry, URL: http://v291440d83.qicp.vip/publish/csii/newdemo1/gray.dat
+SW Trace: 2020/02/21 02:52:02 serviceworker.go:189: Starting up...
+SW Info: 2020/02/21 02:52:02 LICENSE: Work in debug mode.
+SW Info: 2020/02/21 02:52:02 LICENSE: Work in debug mode.
+SW Trace: 2020/02/21 02:52:02 device_darwin.go:18: [DYLD_LIBRARY_PATH=/usr/lib/system/introspection CA_ASSERT_MAIN_THREAD_TRANSACTIONS=0 USER=mobile METAL_DEVICE_WRAPPER_TYPE=1 LOGNAME=mobile PATH=/usr/bin:/bin:/usr/sbin:/sbin NSUnbufferedIO=YES CFFIXED_USER_HOME=/private/var/mobile/Containers/Data/Application/31057862-31E9-4829-A127-F6A4857BAB1A METAL_DEBUG_ERROR_MODE=0 GPUProfilerEnabled=YES SWIFTUI_VIEW_DEBUG=287 HOME=/private/var/mobile/Containers/Data/Application/31057862-31E9-4829-A127-F6A4857BAB1A OS_ACTIVITY_DT_MODE=YES SQLITE_ENABLE_THREAD_ASSERTIONS=1 SHELL=/bin/sh __CF_USER_TEXT_ENCODING=0x1F5:0:0 CLASSIC_OVERRIDE=0 TMPDIR=/private/var/mobile/Containers/Data/Application/31057862-31E9-4829-A127-F6A4857BAB1A/tmp/ CA_DEBUG_TRANSACTIONS=0 XPC_SERVICE_NAME=UIKitApplication:com.rcd.www.coalAPP2[08bf][rb-legacy] XPC_FLAGS=0x0]
+SW Trace: 2020/02/21 02:52:02 device_darwin.go:53: DeviceInfo: isRooted = false
+SW Trace: 2020/02/21 02:52:02 central.go:614: CENTRAL: Getting chain IDs for startup
+SW Trace: 2020/02/21 02:52:02 central.go:628: Chain Stage ID: main.splash
+SW Trace: 2020/02/21 02:52:02 central.go:628: Chain Stage ID: main.page_launcher
+SW Error: 2020/02/21 02:52:02 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:02 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:02 gray.go:343: Unpublished grayscale resources,will execute default version.
+SW Trace: 2020/02/21 02:52:02 gray.go:388: Gray default version:  1.0.0.2
+SW Trace: 2020/02/21 02:52:02 gray.go:92: Do not satisfy all grayscale publish rules,return execute default version.
+SW Trace: 2020/02/21 02:52:03 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:03 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:03 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:03 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:03 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:03 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:03 repo.go:270: No repo file found for main.
+SW Error: 2020/02/21 02:52:03 repo.go:817: REPO: Failed to load data. Invalid data.
+SW Trace: 2020/02/21 02:52:03 repo.go:146: Cached repo file is invalid. Skipped.
+SW Trace: 2020/02/21 02:52:03 repo.go:270: No repo file found for main.
