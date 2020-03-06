@@ -1,0 +1,89 @@
+// ==UserScript==
+// @name         网址生成二维码（方便手机扫码查看）
+// @description  点击按钮，自动在屏幕中间显示当前网页链接生成的二维码，直接使用手机扫码即可打开网页浏览，非常适合微信扫码打开网页进行分享。
+// @icon         https://i.loli.net/2020/02/22/NWPMBYT51rcQauL.jpg
+// @namespace    https://greasyfork.org/zh-CN/users/393603-tsing
+// @version      1.1
+// @author       Tsing
+// @run-at       document-body
+// @match        http://*/*
+// @include      https://*/*
+// @require      https://greasyfork.org/scripts/373256-qrcode-js/code/QRCode-Js.js
+// @grant        GM_registerMenuCommand
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    function showQrcode(){
+        var bg;
+        var qrcode;
+        var crBtn;
+
+        var url = window.location.href;
+        return function(){
+            if(qrcode){
+                qrcode.style.display = qrcode.style.display=='none'?'block':'none'; // 此处代码参考：https://greasyfork.org/zh-CN/scripts/370203
+                return qrcode;
+            }
+
+            bg = document.createElement('div');
+            bg.innerHTML = "<div id='bg' z-index:99999999990; style='position:fixed; top:260px; left:0; right:0; margin:0 auto; '></div>"
+            bg.style.cssText ="display:block; position:fixed; top:0; bottom:0; left:0; right:0; background-color:rgba(10,10,10,.8); z-index:99999999990;";
+            bg.setAttribute('title', '点击任意位置即可关闭二维码');
+            document.body.append(bg);
+            bg.onclick = function(){
+                //隐藏：this.style.display = 'none';
+                bg.remove();
+                qrcode.style.display = 'none';
+                crBtn.remove();
+            };
+
+            qrcode = document.createElement('div');
+            qrcode.innerHTML = "<div id='qrcode' style='position:fixed; top:30px; left:0; right:0; margin:0 auto; width:180px; height:210px; background-color:#ffffff;z-index:99999999991; box-shadow:0 0 10px #444444;'><div style='width:180px; height:40px; line-height:40px; font-size:14px; font-weight:bold; text-align:center; color:black;'>手机扫码访问当前网址</div><style type='text/css'>#qr img{margin:0 !important; border-radius:0 !important; max-width:100% !important;}</style><div id='qr' style='width:160px; height:160px; margin:0 auto;'></div></div>"
+            document.body.append(qrcode);
+            qrcode.onclick = function(){
+                //隐藏：this.style.display = 'none';
+                bg.remove();
+                qrcode.style.display = 'none';
+                crBtn.remove();
+            };
+
+            crBtn = document.createElement('div');
+            var currentURL = window.location.href;
+            crBtn.innerHTML = "<div style='position:fixed;display:flex; align-items: center;justify-content: center; top:260px; left:25%; right:25%;padding:10px; margin:0 auto;z-index:99999999991;background:red; '><textarea rows='10' cols='50' id='inputID' style=‘background:red; color:white;resize:none;width:25%;height:25%’ placeholder=‘输入自定义内容’>"+currentURL+"</textarea><button style=' margin-left:10px; padding:10px;border-radius: 10px; background:green; color:white;' id='mybtn'>生成</button></div>"
+            document.body.append(crBtn);
+            crBtn.onclick = function(){
+
+                var x = document.getElementById("inputID").value;
+                if (x.length > 0) {
+                    url = x;
+                }else {
+                    url = window.location.href;
+                }
+                //移除上一次二维码图片相关的元素
+                qrcode.remove();
+                qrcode = document.createElement('div');
+                qrcode.innerHTML = "<div style='position:fixed; top:30px; left:0; right:0; margin:0 auto; width:180px; height:210px; background-color:#ffffff;z-index:99999999991; box-shadow:0 0 10px #444444;'><div style='width:180px; height:40px; line-height:40px; font-size:14px; font-weight:bold; text-align:center;color:black;'>手机扫码访问当前网址</div><style type='text/css'>#qr img{margin:0 !important; border-radius:0 !important; max-width:100% !important;}</style><div id='qr' style='width:160px; height:160px; margin:0 auto;'></div></div>"
+                qrcode.style.cssText ="z-index:99999999992;";
+                qrcode.setAttribute('title', '点击任意位置即可关闭二维码');
+                document.body.append(qrcode);
+                new QRCode(document.getElementById("qr"), {width : 160, height : 160, text: url});
+                return qrcode;
+            };
+
+            var x = document.getElementById("inputID").value;
+            if (x.length > 0) {
+                url = x;
+            }else {
+                url = window.location.href;
+            }
+
+            new QRCode(document.getElementById("qr"), {width : 160, height : 160, text: url});
+            return qrcode;
+        }
+    }
+
+    GM_registerMenuCommand("网址生成二维码", showQrcode(), "");
+
+})();
